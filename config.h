@@ -8,8 +8,10 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 //static const char *fonts[]          = { "monospace:size=10" };
 
-static const char *fonts[]          = { "siji:style=regular:size=12","inconsolata:size=10" };
-static const char dmenufont[]          = { "inconsolata:size=10" };
+//static const char *fonts[]          = { "inconsolata:size=10","siji:style=regular:size=12"};
+static const char *fonts[]          = { "Fira Code:size=12","siji:style=regular:size=12"};
+//static const char dmenufont[]          = { "inconsolata:size=10" };
+static const char dmenufont[]          = { "Fira Code:size=12" };
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
