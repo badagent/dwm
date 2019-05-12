@@ -7,7 +7,8 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 //static const char *fonts[]          = { "monospace:size=10" };
-static const char *fonts[]          = { "inconsolata:size=10" };
+
+static const char *fonts[]          = { "siji:style=regular:size=12","inconsolata:size=10" };
 static const char dmenufont[]          = { "inconsolata:size=10" };
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
@@ -48,9 +49,9 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle },
+	{ "\ue131",      tile },    /* first entry is default */
+	{ "\ue135",      NULL },    /* no layout function means floating behavior */
+	{ "\ue130",      monocle },
 };
 
 /* key definitions */
