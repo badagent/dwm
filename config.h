@@ -17,6 +17,7 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Fira Code:size=12","siji:style=regular:size=12"};
 //static const char dmenufont[]          = { "inconsolata:size=10" };
 static const char dmenufont[]          = { "Fira Code:size=12" };
+static const char col_black[]       = "#000000";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -27,7 +28,7 @@ static const unsigned int borderalpha = 0x00;//OPAQUE;
 static const char col_red[]	    = "#FF0000";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray1 },
+	[SchemeNorm] = { col_gray3, col_black, col_gray1 },
 	[SchemeSel]  = { col_gray4, col_cyan,  col_red  },
 };
 static const unsigned int alphas[][3]      = {
