@@ -41,10 +41,10 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     isfloating   monitor borderpx */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 ,	   1       },
-	{ "SomeApp",  NULL,       NULL,       1 << 8,       0,           -1 ,	   1	   },
-	{ "trayer",   NULL,       NULL,       0,            1,           -1 ,	   0	   },
+	/* class      instance    title       tags mask     isfloating   monitor borderpx isbackgroundapp*/
+	{ "Gimp",     NULL,       NULL,       0,            1,           -1 ,	   1,	   0},
+	{ "SomeApp",  NULL,       NULL,       1 << 8,       0,           -1 ,	   1,	   0},
+	{ "trayer",   NULL,       NULL,       255,            1,           -1 ,	   0,	   1},
 };
 
 /* layout(s) */
