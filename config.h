@@ -1,4 +1,5 @@
 #include <X11/XF86keysym.h>
+#include </home/badagent/.cache/wal/colors-wal-dwm.h>
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
@@ -7,26 +8,36 @@ static const unsigned int gappx     = 20;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-//static const char *fonts[]          = { "monospace:size=10" };
 
-//static const char *fonts[]          = { "inconsolata:size=10","siji:style=regular:size=12"};
-static const char *fonts[]          = { "Fira Code:size=12","siji:style=regular:size=12"};
-//static const char dmenufont[]          = { "inconsolata:size=10" };
+static const char *fonts[]          = { "Fira Code:size=14:antialias=true","Font Awesome 5 Free:size=14"};
 static const char dmenufont[]          = { "Fira Code:size=12" };
+
 static const char col_black[]       = "#000000";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
-static const unsigned int baralpha = 0x00;
+static const char col_red[] 	    = "#ff0000";
+
+/*
+static const char norm_fg[]	    = "#cae0ec";
+static const char norm_bg[]	    = "#040A11";
+static const char norm_border[]	    = "#8d9ca5";
+
+static const char sel_fg[]            = "#cae0ec";
+static const char sel_bg[]	    = "#6c7789";
+static const char sel_border[]	    = "#cae0ec";
+*/
+static const unsigned int baralpha = 0xaa;
 static const unsigned int borderalpha = 0x00;//OPAQUE;
-static const char col_red[]	    = "#FF0000";
-static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_black, col_gray1 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_red  },
-};
+
+//static const char *colors[][3]      = {
+//	/*               fg         bg         border   */
+//	[SchemeNorm] = { norm_fg, norm_bg, norm_border},
+//	[SchemeSel]  = { sel_fg, sel_bg,  sel_border},
+//};
+
 static const unsigned int alphas[][3]      = {
 	/*               fg      bg        border     */
 	[SchemeNorm] = { OPAQUE, baralpha, borderalpha },
@@ -54,9 +65,9 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "\ue131",      tile },    /* first entry is default */
-	{ "\ue135",      NULL },    /* no layout function means floating behavior */
-	{ "\ue130",      monocle },
+	{ "\uf009",      tile },    /* first entry is default */
+	{ "\uf24d",      NULL },    /* no layout function means floating behavior */
+	{ "\uf002",      monocle },
 };
 
 /* key definitions */
